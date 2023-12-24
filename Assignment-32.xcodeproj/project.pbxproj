@@ -11,6 +11,10 @@
 		B575D8FE2B38855C00A7A80B /* TBCAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B575D8FD2B38855C00A7A80B /* TBCAnimationView.swift */; };
 		B575D9002B38855E00A7A80B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B575D8FF2B38855E00A7A80B /* Assets.xcassets */; };
 		B575D9032B38855E00A7A80B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B575D9022B38855E00A7A80B /* Preview Assets.xcassets */; };
+		B575D90D2B38A0A300A7A80B /* ChristmasTreeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B575D90C2B38A0A300A7A80B /* ChristmasTreeView.swift */; };
+		B575D9102B38A16900A7A80B /* ChristmasAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B575D90F2B38A16900A7A80B /* ChristmasAnimationView.swift */; };
+		B575D9132B38A6E300A7A80B /* EffectsLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = B575D9122B38A6E300A7A80B /* EffectsLibrary */; };
+		B575D9162B38A8DC00A7A80B /* AnimationsTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B575D9152B38A8DC00A7A80B /* AnimationsTabView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,9 @@
 		B575D8FD2B38855C00A7A80B /* TBCAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TBCAnimationView.swift; sourceTree = "<group>"; };
 		B575D8FF2B38855E00A7A80B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B575D9022B38855E00A7A80B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B575D90C2B38A0A300A7A80B /* ChristmasTreeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChristmasTreeView.swift; sourceTree = "<group>"; };
+		B575D90F2B38A16900A7A80B /* ChristmasAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChristmasAnimationView.swift; sourceTree = "<group>"; };
+		B575D9152B38A8DC00A7A80B /* AnimationsTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationsTabView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B575D9132B38A6E300A7A80B /* EffectsLibrary in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,7 +60,7 @@
 			isa = PBXGroup;
 			children = (
 				B575D9092B3885FB00A7A80B /* App */,
-				B575D90A2B38860900A7A80B /* MainScreen */,
+				B575D9142B38A7CE00A7A80B /* Screens */,
 				B575D90B2B38861800A7A80B /* Resources */,
 				B575D9012B38855E00A7A80B /* Preview Content */,
 			);
@@ -91,6 +99,33 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		B575D90E2B38A13E00A7A80B /* ChristmasScreen */ = {
+			isa = PBXGroup;
+			children = (
+				B575D90F2B38A16900A7A80B /* ChristmasAnimationView.swift */,
+				B575D90C2B38A0A300A7A80B /* ChristmasTreeView.swift */,
+			);
+			path = ChristmasScreen;
+			sourceTree = "<group>";
+		};
+		B575D9142B38A7CE00A7A80B /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				B575D9192B38AEF700A7A80B /* TabView */,
+				B575D90A2B38860900A7A80B /* MainScreen */,
+				B575D90E2B38A13E00A7A80B /* ChristmasScreen */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		B575D9192B38AEF700A7A80B /* TabView */ = {
+			isa = PBXGroup;
+			children = (
+				B575D9152B38A8DC00A7A80B /* AnimationsTabView.swift */,
+			);
+			path = TabView;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -107,6 +142,9 @@
 			dependencies = (
 			);
 			name = "Assignment-32";
+			packageProductDependencies = (
+				B575D9122B38A6E300A7A80B /* EffectsLibrary */,
+			);
 			productName = "Assignment-32";
 			productReference = B575D8F82B38855C00A7A80B /* Assignment-32.app */;
 			productType = "com.apple.product-type.application";
@@ -135,6 +173,9 @@
 				Base,
 			);
 			mainGroup = B575D8EF2B38855C00A7A80B;
+			packageReferences = (
+				B575D9112B38A6E300A7A80B /* XCRemoteSwiftPackageReference "effects-library" */,
+			);
 			productRefGroup = B575D8F92B38855C00A7A80B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -161,7 +202,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B575D9102B38A16900A7A80B /* ChristmasAnimationView.swift in Sources */,
+				B575D9162B38A8DC00A7A80B /* AnimationsTabView.swift in Sources */,
 				B575D8FE2B38855C00A7A80B /* TBCAnimationView.swift in Sources */,
+				B575D90D2B38A0A300A7A80B /* ChristmasTreeView.swift in Sources */,
 				B575D8FC2B38855C00A7A80B /* Assignment_32App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -368,6 +412,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B575D9112B38A6E300A7A80B /* XCRemoteSwiftPackageReference "effects-library" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/GetStream/effects-library";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B575D9122B38A6E300A7A80B /* EffectsLibrary */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B575D9112B38A6E300A7A80B /* XCRemoteSwiftPackageReference "effects-library" */;
+			productName = EffectsLibrary;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B575D8F02B38855C00A7A80B /* Project object */;
 }
